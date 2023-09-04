@@ -8,14 +8,26 @@ public class HelloWorldController: ControllerBase
 {
     IHelloWorldService helloWorldService;
 
-    public HelloWorldController(IHelloWorldService helloWorld)
+    TareasContext dbContext;
+
+    public HelloWorldController(IHelloWorldService helloWorld, TareasContext db)
     {
         helloWorldService = helloWorld;
+        dbContext = db;
     }
 
     [HttpGet]
     public IActionResult Get()
     {
         return Ok(helloWorldService.GetHelloWorld());
+    }
+
+    [HttpGet]
+    [Route("createdb")]
+    public IActionResult CreateDatabase()
+    {
+        dbContext.Database.EnsureCreated();
+
+        return Ok();
     }
 }
