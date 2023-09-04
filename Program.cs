@@ -22,7 +22,7 @@ app.UseAuthorization();
 
 //app.UseWelcomePage();
 
-app.UseTimeMiddleware();
+//app.UseTimeMiddleware();
 
 app.MapControllers();
 
