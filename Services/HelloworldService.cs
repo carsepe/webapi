@@ -1,4 +1,4 @@
-public class HelloWorldServices : IHelloWorldService
+public class HelloWorldService : IHelloWorldService
 {
    public string GetHelloWorld()
    {
