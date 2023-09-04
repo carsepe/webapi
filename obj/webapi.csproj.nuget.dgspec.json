@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\carlo\\Documents\\platzi\\webapi\\webapi.csproj": {}
+    "c:\\Users\\carlo\\Documents\\platzi\\webapi\\webapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\carlo\\Documents\\platzi\\webapi\\webapi.csproj": {
+    "c:\\Users\\carlo\\Documents\\platzi\\webapi\\webapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\carlo\\Documents\\platzi\\webapi\\webapi.csproj",
+        "projectUniqueName": "c:\\Users\\carlo\\Documents\\platzi\\webapi\\webapi.csproj",
         "projectName": "webapi",
-        "projectPath": "C:\\Users\\carlo\\Documents\\platzi\\webapi\\webapi.csproj",
+        "projectPath": "c:\\Users\\carlo\\Documents\\platzi\\webapi\\webapi.csproj",
         "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\carlo\\Documents\\platzi\\webapi\\obj\\",
+        "outputPath": "c:\\Users\\carlo\\Documents\\platzi\\webapi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -46,6 +46,18 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.10, )"
             },
